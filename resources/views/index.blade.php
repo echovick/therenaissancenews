@@ -1,277 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+
 <!-- Featured Post Area Start -->
-<section class="utf_featured_post_area pt-4 no-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7 col-md-12 pad-r">
-				<div id="utf_featured_slider" class="owl-carousel owl-theme utf_featured_slider">
-					<div class="item" style="background-image:url({{ asset('assets/images/news/lifestyle/health5.jpg') }})">
-						<div class="utf_featured_post">
-							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Health</a>
-								<h2 class="utf_post_title title-extra-large"> <a href="#">Zhang social media pop also
-										known when smart innocent...</a> </h2>
-								<span class="utf_post_author"><i class="fa fa-user"></i> <a href="#">John
-										Wick</a></span>
-								<span class="utf_post_date"><i class="fa fa-clock-o"></i> 20 Jan, 2021</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item" style="background-image:url({{ asset('assets/images/news/tech/gadget2.jpg') }})">
-						<div class="utf_featured_post">
-							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Gadget</a>
-								<h2 class="utf_post_title title-extra-large"> <a href="#">Samsung Gear S3 review: A
-										whimper, when smartwatches need a bang</a> </h2>
-								<span class="utf_post_author"><i class="fa fa-user"></i> <a href="#">John
-										Wick</a></span>
-								<span class="utf_post_date"><i class="fa fa-clock-o"></i> 20 Jan, 2021</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item" style="background-image:url({{ asset('assets/images/news/lifestyle/travel5.jpg') }})">
-						<div class="utf_featured_post">
-							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Travel</a>
-								<h2 class="utf_post_title title-extra-large"> <a href="#">Zhang social media pop also
-										known when smart innocent...</a> </h2>
-								<span class="utf_post_author"><i class="fa fa-user"></i> <a href="#">John
-										Wick</a></span>
-								<span class="utf_post_date"><i class="fa fa-clock-o"></i> 20 Jan, 2021</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-5 col-md-12 pad-l">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="utf_post_overaly_style contentTop hot-post-top clearfix">
-							<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-										src="{{ asset('assets/images/news/tech/gadget4.jpg') }}" alt="" /></a> </div>
-							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Gadget</a>
-								<h2 class="utf_post_title title-large"> <a href="#">Why The iPhone X Will Force Apple
-										To Choose Between Good Or Evil</a> </h2>
-								<span class="utf_post_author"><i class="fa fa-user"></i> <a href="#">John
-										Wick</a></span>
-								<span class="utf_post_date"><i class="fa fa-clock-o"></i> 20 Jan, 2021</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 pad-r-small">
-						<div class="utf_post_overaly_style contentTop utf_hot_post_bottom clearfix">
-							<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-										src="{{ asset('assets/images/news/lifestyle/travel2.jpg') }}" alt="" /></a> </div>
-							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Travel</a>
-								<h2 class="utf_post_title title-medium"> <a href="#">Early tourists choices to the sea
-										of Maldiv…</a> </h2>
-								<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i> <a
-											href="#">John Wick</a></span></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 pad-l-small">
-						<div class="utf_post_overaly_style contentTop utf_hot_post_bottom clearfix">
-							<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-										src="{{ asset('assets/images/news/lifestyle/health1.jpg') }}" alt="" /></a> </div>
-							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Health</a>
-								<h2 class="utf_post_title title-medium"> <a href="#">That wearable on your wrist could
-										soon...</a> </h2>
-								<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i> <a
-											href="#">John Wick</a></span> </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+@include('includes.homepage.featured-posts')
 <!-- Featured Post Area End -->
 
 <!-- Latest News Area Start -->
-<section class="utf_latest_new_area pb-bottom-20">
-	<div class="container">
-		<div class="utf_latest_news block color-red">
-			<h3 class="utf_block_title"><span>Latest News</span></h3>
-			<div id="utf_latest_news_slide" class="owl-carousel owl-theme utf_latest_news_slide">
-				<div class="item">
-					<ul class="utf_list_post">
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/health5.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Health</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/travel4.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Travel</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<div class="item">
-					<ul class="utf_list_post">
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ ('assets/images/news/lifestyle/travel5.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Travel</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/health4.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Health</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<div class="item">
-					<ul class="utf_list_post">
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/tech/gadget2.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Gadget</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/architecture3.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Architecture</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<div class="item">
-					<ul class="utf_list_post">
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/food3.jpg') }}" alt="" /> </a> </div>
-								<a class="utf_post_cat" href="#">Food</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="{{ asset('assets/images/news/tech/game1.jpg') }}" alt="" /> </a> </div>
-								<a class="utf_post_cat" href="#">Health</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<div class="item">
-					<ul class="utf_list_post">
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/travel5.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Travel</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-
-						<li class="clearfix">
-							<div class="utf_post_block_style clearfix">
-								<div class="utf_post_thumb"> <a href="#"><img class="img-fluid"
-											src="{{ asset('assets/images/news/lifestyle/health4.jpg') }}" alt="" /></a> </div>
-								<a class="utf_post_cat" href="#">Health</a>
-								<div class="utf_post_content">
-									<h2 class="utf_post_title title-medium"> <a href="#">Zhang social media pop also
-											known when smart innocent...</a> </h2>
-									<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i>
-											<a href="#">John Wick</a></span> <span class="utf_post_date"><i
-												class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+@include('includes.homepage.latest-news')
 <!-- Latest News Area End -->
 
 <!-- Ad Content Area Start -->
@@ -285,7 +21,7 @@
 </div>
 <!-- Ad Content Area End -->
 
-<!-- 1rd Block Wrapper Start -->
+<!-- 1st Block Wrapper Start -->
 <section class="utf_block_wrapper p-bottom-0">
 	<div class="container">
 		<div class="row">
@@ -328,7 +64,7 @@
 											<li class="clearfix">
 												<div class="utf_post_block_style post-float clearfix">
 													<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-																src="{{ assets('assets/images/news/tech/gadget2.jpg') }}" alt="" /> </a> </div>
+																src="{{ asset('assets/images/news/tech/gadget2.jpg') }}" alt="" /> </a> </div>
 													<div class="utf_post_content">
 														<h2 class="utf_post_title title-small"> <a href="#">Zhang social
 																media pop also known when smart innocent...</a> </h2>
@@ -446,7 +182,7 @@
 											<li class="clearfix">
 												<div class="utf_post_block_style post-float clearfix">
 													<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-																src="images/news/tech/robot4.jpg" alt="" /> </a> </div>
+																src="{{ asset('assets/images/news/tech/robot4.jpg') }}" alt="" /> </a> </div>
 													<div class="utf_post_content">
 														<h2 class="utf_post_title title-small"> <a href="#">Zhang social
 																media pop also known when smart innocent...</a> </h2>
@@ -461,7 +197,7 @@
 											<li class="clearfix">
 												<div class="utf_post_block_style post-float clearfix">
 													<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-																src="images/news/tech/robot5.jpg" alt="" /> </a> </div>
+																src="{{ asset('assets/images/news/tech/robot5.jpg') }}" alt="" /> </a> </div>
 													<div class="utf_post_content">
 														<h2 class="utf_post_title title-small"> <a href="#">Zhang social
 																media pop also known when smart innocent...</a> </h2>
@@ -487,7 +223,7 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="utf_post_overaly_style clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/lifestyle/travel1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/lifestyle/travel1.jpg') }}" alt="" /> </a> </div>
 								<div class="utf_post_content"> <a class="utf_post_cat" href="#">Travel</a>
 									<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
 											innocent...</a> </h2>
@@ -502,7 +238,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/food1.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/food1.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Food</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -518,7 +254,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/health1.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/health1.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Health</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -534,7 +270,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/travel2.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/travel2.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Travel</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -550,7 +286,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/architecture2.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/architecture2.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Architecture</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -569,7 +305,7 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="utf_post_overaly_style last clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/lifestyle/architecture3.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/lifestyle/architecture3.jpg') }}" alt="" /> </a> </div>
 								<div class="utf_post_content"> <a class="utf_post_cat" href="#">Architecture</a>
 									<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
 											innocent...</a> </h2>
@@ -584,7 +320,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/health2.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/health2.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Health</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -600,7 +336,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/food2.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/food2.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Food</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -616,7 +352,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/architecture1.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/architecture1.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Architecture</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -632,7 +368,7 @@
 									<li class="clearfix">
 										<div class="utf_post_block_style post-float clearfix">
 											<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-														src="images/news/lifestyle/travel5.jpg" alt="" /> </a> <a
+														src="{{ asset('assets/images/news/lifestyle/travel5.jpg') }}" alt="" /> </a> <a
 													class="utf_post_cat" href="#">Travel</a> </div>
 											<div class="utf_post_content">
 												<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -669,7 +405,7 @@
 						<h3 class="utf_block_title"><span>Popular News</span></h3>
 						<div class="utf_post_overaly_style clearfix">
 							<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-										src="images/news/lifestyle/health4.jpg" alt="" /> </a> </div>
+										src="{{ asset('assets/images/news/lifestyle/health4.jpg') }}" alt="" /> </a> </div>
 							<div class="utf_post_content"> <a class="utf_post_cat" href="#">Health</a>
 								<h2 class="utf_post_title"> <a href="#">Smart packs parking sensor tech and beeps when
 										col…</a> </h2>
@@ -684,7 +420,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/tech/gadget3.jpg" alt="" /> </a> <a
+													src="{{ asset('assets/images/news/tech/gadget3.jpg') }}" alt="" /> </a> <a
 												class="utf_post_cat" href="#">Lifestyle</a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -700,7 +436,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/lifestyle/travel5.jpg" alt="" /> </a> <a
+													src="{{ asset('assets/images/news/lifestyle/travel5.jpg') }}" alt="" /> </a> <a
 												class="utf_post_cat" href="#">Travel</a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -716,7 +452,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/tech/robot5.jpg" alt="" /> </a> <a class="utf_post_cat"
+													src="{{ asset('assets/images/news/tech/robot5.jpg') }}" alt="" /> </a> <a class="utf_post_cat"
 												href="#">Traveling</a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -732,7 +468,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/lifestyle/food1.jpg" alt="" /> </a> <a
+													src="{{ asset('assets/images/news/lifestyle/food1.jpg') }}" alt="" /> </a> <a
 												class="utf_post_cat" href="#">Food</a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop
@@ -754,7 +490,7 @@
 							<div class="item">
 								<div class="utf_post_overaly_style text-center clearfix">
 									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/tech/gadget1.jpg" alt="" /> </a> </div>
+												src="{{ asset('assets/images/news/tech/gadget1.jpg') }}" alt="" /> </a> </div>
 									<div class="utf_post_content"> <a class="utf_post_cat" href="#">Lifestyle</a>
 										<h2 class="utf_post_title"> <a href="#">The best MacBook Pro alternatives in 2021
 												for Appl…</a> </h2>
@@ -769,7 +505,7 @@
 							<div class="item">
 								<div class="utf_post_overaly_style text-center clearfix">
 									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/health5.jpg" alt="" /> </a> </div>
+												src="{{ asset('assets/images/news/lifestyle/health5.jpg') }}" alt="" /> </a> </div>
 									<div class="utf_post_content"> <a class="utf_post_cat" href="#">Health</a>
 										<h2 class="utf_post_title"> <a href="#">Netcix cuts out the chill with an
 												integrated perso…</a> </h2>
@@ -787,213 +523,7 @@
 		</div>
 	</div>
 </section>
-<!-- 1rd Block Wrapper End -->
-
-<!-- 2rd Block Wrapper Start -->
-<section class="utf_block_wrapper p-bottom-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="block color-dark-blue">
-					<h3 class="utf_block_title"><span>Travel News</span></h3>
-					<div class="utf_post_overaly_style clearfix">
-						<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-									src="images/news/lifestyle/travel1.jpg" alt="" /> </a> </div>
-						<div class="utf_post_content">
-							<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
-									innocent...</a> </h2>
-							<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i> <a
-										href="#">John Wick</a></span> <span class="utf_post_date"><i
-										class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-						</div>
-					</div>
-
-					<div class="utf_list_post_block">
-						<ul class="utf_list_post">
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/travel2.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/travel3.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/travel4.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<div class="block color-aqua">
-					<h3 class="utf_block_title"><span>Lifestyle News</span></h3>
-					<div class="utf_post_overaly_style clearfix">
-						<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-									src="images/news/tech/gadget1.jpg" alt="" /> </a> </div>
-						<div class="utf_post_content">
-							<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
-									innocent...</a> </h2>
-							<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i> <a
-										href="#">John Wick</a></span> <span class="utf_post_date"><i
-										class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-						</div>
-					</div>
-
-					<div class="utf_list_post_block">
-						<ul class="utf_list_post">
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/tech/gadget2.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/tech/gadget3.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/tech/gadget4.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<div class="block color-violet">
-					<h3 class="utf_block_title"><span>Health News</span></h3>
-					<div class="utf_post_overaly_style clearfix">
-						<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-									src="images/news/lifestyle/health1.jpg" alt="" /> </a> </div>
-						<div class="utf_post_content">
-							<h2 class="utf_post_title"> <a href="#">That wearable on your wrist could soon track your
-									health as …</a> </h2>
-							<div class="utf_post_meta"> <span class="utf_post_author"><i class="fa fa-user"></i> <a
-										href="#">John Wick</a></span> <span class="utf_post_date"><i
-										class="fa fa-clock-o"></i> 25 Jan, 2021</span> </div>
-						</div>
-					</div>
-
-					<div class="utf_list_post_block">
-						<ul class="utf_list_post">
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/health2.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/health3.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="clearfix">
-								<div class="utf_post_block_style post-float clearfix">
-									<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-												src="images/news/lifestyle/health4.jpg" alt="" /> </a> </div>
-									<div class="utf_post_content">
-										<h2 class="utf_post_title title-small"> <a href="#">Zhang social media pop also
-												known when smart innocent...</a> </h2>
-										<div class="utf_post_meta"> <span class="utf_post_author"><i
-													class="fa fa-user"></i> <a href="#">John Wick</a></span> <span
-												class="utf_post_date"><i class="fa fa-clock-o"></i> 25 Jan, 2021</span>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- 2rd Block Wrapper End -->
+<!-- 1st Block Wrapper End -->
 
 <!-- 3rd Block Wrapper Start -->
 <section class="utf_block_wrapper p-bottom-0">
@@ -1006,7 +536,7 @@
 						<div class="item">
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/video/video1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/video/video1.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Video</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1021,7 +551,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game5.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game5.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Health</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1036,7 +566,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game4.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game4.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Health</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
@@ -1051,7 +581,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/robot5.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/robot5.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Traveling</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
@@ -1066,7 +596,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game5.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game5.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Health</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1083,7 +613,7 @@
 						<div class="item">
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/video/video2.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/video/video2.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Video</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1098,7 +628,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/video/video3.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/video/video3.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Video</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Breeze through 17 locations in Europe in
@@ -1113,7 +643,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/lifestyle/architecture1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/lifestyle/architecture1.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Architecture</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Science meets architecture in robotically
@@ -1128,7 +658,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game1.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Traveling</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Historical heroes and robot dinosaurs: New
@@ -1145,7 +675,7 @@
 						<div class="item">
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/video/video1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/video/video1.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Video</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1160,7 +690,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game5.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game5.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Health</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1175,7 +705,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game4.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game4.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Health</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
@@ -1190,7 +720,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/robot5.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/robot5.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Traveling</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Zhang social media pop also known when smart
@@ -1205,7 +735,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game5.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game5.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Health</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1222,7 +752,7 @@
 						<div class="item">
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/video/video2.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/video/video2.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Video</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Ratcliffe to be Director of intelligence
@@ -1237,7 +767,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/video/video3.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/video/video3.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Video</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Breeze through 17 locations in Europe in
@@ -1252,7 +782,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/lifestyle/architecture1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/lifestyle/architecture1.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Architecture</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Science meets architecture in robotically
@@ -1267,7 +797,7 @@
 
 							<div class="utf_post_block_style utf_post_float_half clearfix">
 								<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-											src="images/news/tech/game1.jpg" alt="" /> </a> </div>
+											src="{{ asset('assets/images/news/tech/game1.jpg') }}" alt="" /> </a> </div>
 								<a class="utf_post_cat" href="#">Traveling</a>
 								<div class="utf_post_content">
 									<h2 class="utf_post_title"> <a href="#">Historical heroes and robot dinosaurs: New
@@ -1293,7 +823,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/review/review1.jpg" alt="" /> </a> </div>
+													src="{{ asset('assets/images/news/review/review1.jpg') }}" alt="" /> </a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title"> <a href="#">Zhang social media pop known
 													innocent...</a> </h2>
@@ -1309,7 +839,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/review/review2.jpg" alt="" /> </a> </div>
+													src="{{ asset('assets/images/news/review/review2.jpg') }}" alt="" /> </a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title"> <a href="#">Zhang social media pop known
 													innocent...</a> </h2>
@@ -1325,7 +855,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/review/review3.jpg" alt="" /> </a> </div>
+													src="{{ asset('assets/images/news/review/review3.jpg') }}" alt="" /> </a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title"> <a href="#">Zhang social media pop known
 													innocent...</a> </h2>
@@ -1341,7 +871,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/review/review4.jpg" alt="" /> </a> </div>
+													src="{{ asset('assets/images/news/review/review4.jpg') }}" alt="" /> </a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title"> <a href="#">Zhang social media pop known
 													innocent...</a> </h2>
@@ -1357,7 +887,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/review/review2.jpg" alt="" /> </a> </div>
+													src="{{ asset('assets/images/news/review/review2.jpg') }}" alt="" /> </a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title"> <a href="#">Zhang social media pop known
 													innocent...</a> </h2>
@@ -1373,7 +903,7 @@
 								<li class="clearfix">
 									<div class="utf_post_block_style post-float clearfix">
 										<div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
-													src="images/news/review/review3.jpg" alt="" /> </a> </div>
+													src="{{ asset('assets/images/news/review/review3.jpg') }}" alt="" /> </a> </div>
 										<div class="utf_post_content">
 											<h2 class="utf_post_title"> <a href="#">Zhang social media pop known
 													innocent...</a> </h2>
@@ -1420,7 +950,7 @@
 <div class="utf_ad_content_area text-center utf_banner_area">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12"> <img class="img-fluid" src="images/banner-ads/ad-content-two.png" alt="" />
+			<div class="col-md-12"> <img class="img-fluid" src="{{ asset('assets/images/banner-ads/ad-content-two.png') }}" alt="" />
 			</div>
 		</div>
 	</div>
